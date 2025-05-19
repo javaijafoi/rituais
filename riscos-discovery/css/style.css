@@ -1,0 +1,266 @@
+:root {
+  --dark-blue: #002855;
+  --medium-blue: #0072CE;
+  --light-blue: #8ECAE6;
+  --white: #ffffff;
+  --gray: #f5f5f5;
+  --text-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--white);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(135deg, var(--dark-blue) 70%, var(--medium-blue) 100%);
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, transparent 90%, var(--medium-blue) 90%, var(--medium-blue) 100%);
+  opacity: 0.2;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  position: relative;
+}
+
+.intro {
+  background-color: var(--medium-blue);
+  color: var(--white);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.pm-role {
+  background-color: var(--light-blue);
+  padding: 2rem 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.pm-role-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pm-role h2 {
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pm-role p {
+  margin-bottom: 1rem;
+}
+
+.risks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.risk-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.risk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.risk-header {
+  background-color: #e0e0e0;
+  color: var(--text-color);
+  padding: 1.5rem;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.risk-card:hover .risk-header {
+  background-color: var(--medium-blue);
+  color: var(--white);
+}
+
+.risk-header h3 {
+  margin-bottom: 0.5rem;
+  padding-left: 40px;
+}
+
+.risk-number {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  color: var(--medium-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.risk-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.risk-icon i {
+  color: var(--medium-blue);
+  font-size: 1.2rem;
+}
+
+.risk-question {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.risk-content {
+  padding: 1.5rem;
+}
+
+.risk-responsible {
+  background-color: var(--gray);
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.risk-responsible strong {
+  color: var(--dark-blue);
+}
+
+.risk-details p {
+  margin-bottom: 0.75rem;
+}
+
+.toggle-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 24px;
+  height: 24px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.toggle-icon i {
+  color: var(--medium-blue);
+  font-size: 0.8rem;
+}
+
+.risk-card.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .risks-container {
+    grid-template-columns: 1fr;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .risk-header h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+  }
+  
+  .risk-header {
+    padding: 1rem;
+  }
+  
+  .risk-number {
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .risk-icon {
+    top: 1rem;
+    right: 1rem;
+  }
+}
