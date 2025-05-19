@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novos Rituais de Produto - PremierPet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Novos Rituais de Produto</h1>
+            <p>Estrutura atualizada para otimizar o fluxo de trabalho e entregas</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#rituais-principais">Rituais Principais</a></li>
+            <li><a href="#rituais-secundarios">Rituais Secundários</a></li>
+            <li><a href="#discovery">Esteira de Discovery</a></li>
+            <li><a href="riscos-discovery/index.html" target="_blank">7 Riscos de Discovery <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i></a></li>
+        </ul>
+    </nav>
+
+    <section id="introducao">
+        <div class="container">
+            <h2 class="section-title">Introdução ao Novo Processo</h2>
+            <div class="intro">
+                <p>O novo processo de rituais de produto foi desenvolvido para otimizar o fluxo de trabalho, garantir maior transparência e eficiência nas entregas. A estrutura foi redesenhada para focar nas reuniões essenciais, reduzir o tempo gasto em alinhamentos e aumentar a produtividade das equipes.</p>
+                <p>Esta nova abordagem divide claramente os rituais em principais e secundários, além de estabelecer uma esteira de discovery bem definida com SLAs específicos por tamanho de demanda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rituais-principais">
+        <div class="container">
+            <h2 class="section-title">Rituais Principais</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 class="card-title">Pre-Planning (Checkpoint de Negócios)</h3>
+                    <div class="card-content">
+                        <p><strong>Objetivo:</strong> Definir o tema da sprint, épico prioritário e critério de sucesso.</p>
+                        <p><strong>Participantes:</strong> PO, TL, PM, Business Owner</p>
+                        <p><strong>Observações:</strong> Foco total na direção estratégica da sprint. Sem discussão técnica.</p>
+                    </div>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>30 minutos</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Sexta-feira à tarde (idealmente logo após a Review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Planning Técnica</h3>
+                    <div class="card-content">
+                        <p><strong>Objetivo:</strong> Planejar a execução da sprint com base no direcionamento da pre-planning.</p>
+                        <p><strong>Participantes:</strong> Squad completa, PO, TL, PM (opcional)</p>
+                        <p><strong>Observações:</strong> Não é espaço para refinamento. Apenas histórias prontas entram.</p>
+                        <p><strong>Dever de Casa:</strong> PO organizar agenda contínua de refinamento com a BuildBox</p>
+                    </div>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 horas</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Segunda-feira de manhã</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Daily</h3>
+                    <div class="card-content">
+                        <p><strong>Objetivo:</strong> Sincronizar rapidamente o andamento do trabalho da squad e identificar impedimentos.</p>
+                        <p><strong>Participantes:</strong> Tech Lead, Squad, PO</p>
+                        <p><strong>Observações:</strong> Não deve ultrapassar 15 minutos. Qualquer discussão mais profunda deve ser levada para sessões de refinamento. Se a daily está se alongando, é um sintoma de que está faltando espaço para refinamento.</p>
+                    </div>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>15 minutos</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Diária</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Review</h3>
+                    <div class="card-content">
+                        <p><strong>Objetivo:</strong> Apresentar o que foi entregue na sprint com foco em impacto de negócio. Compartilhar resultados de forma clara e objetiva.</p>
+                        <p><strong>Participantes:</strong> PO, TL, PM, Business Owner</p>
+                        <p><strong>Observações:</strong> Foco na entrega de valor de negócio. Apresentações técnicas devem ser simplificadas ou documentadas por e-mail. Se terminar antes, já se inicia a Pre-Planning para otimizar tempo.</p>
+                        <p><strong>Dever de Casa:</strong> PO deve preparar material de apoio com detalhes técnicos/documentais para ser enviado por e-mail, caso algo não seja abordado durante a apresentação.</p>
+                    </div>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>45 minutos</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Sexta-feira à tarde</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Retrospectiva</h3>
+                    <div class="card-content">
+                        <p><strong>Objetivo:</strong> Refletir sobre a sprint finalizada para identificar melhorias no processo de trabalho da squad.</p>
+                        <p><strong>Participantes:</strong> Squad (facultativo, sob gestão da BuildBox)</p>
+                        <p><strong>Observações:</strong> Altamente recomendada para amadurecimento dos processos ágeis, mas não será mais um ritual obrigatório pela PremierPet. Fica sob responsabilidade da BuildBox decidir pela realização, desde que não prejudique as entregas.</p>
+                        <p><strong>Dever de Casa:</strong> BuildBox deve avaliar a necessidade da retro e garantir que a decisão não impacte negativamente o desempenho do time.</p>
+                    </div>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>A critério da BuildBox</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Opcional por sprint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">CheckPoint</h3>
+                    <div class="card-content">
+                        <p><strong>Objetivo:</strong> Acompanhar evolução do produto e realizar briefings (recepção de demanda, dúvidas sobre demandas, alinhamento de Roadmap).</p>
+                        <p><strong>Participantes:</strong> BO, PM, PO, UX, UI</p>
+                        <p><strong>Observações:</strong> Essa reunião visa sempre deixar a área de negócios com visibilidade do processo de discovery. Nela tiraremos as dúvidas necessárias para avançar com as demandas e apresentaremos os discoveries.</p>
+                        <p><strong>Dever de Casa:</strong> Negócios deve trazer as demandas organizadas, bem como toda e qualquer dúvida levantada por outros canais devem já vir com resposta preparada, para que foquemos apenas nas resoluções.</p>
+                    </div>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>1 hora</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Semanal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rituais-secundarios">
+        <div class="container">
+            <h2 class="section-title">Rituais Secundários</h2>
+            <div class="secondary-meetings">
+                <h3>Outras Agendas Possíveis</h3>
+                <p><strong>Refinamentos de cartão:</strong> Responsabilidade da Buildbox. Deve ser no máximo +2h por semana. Se parar todo mundo seriam 28 horas totais na sprint no máximo. Estamos liberando 8h de sprint (segunda de tarde e sexta de manhã), eles podem colocar essas horas sem impacto no desenvolvimento e sobram 4h.</p>
+                <p><strong>Dúvidas sobre demandas:</strong> Primeiramente tiradas com o PM, se não sanar, escalamos para o BO por e-mail e/ou reunião, de acordo com a urgência. Deve ser no máximo mais 2h por sprint. Se envolver todos possíveis nessa fase, são 10h.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="discovery">
+        <div class="container">
+            <h2 class="section-title">Esteira de Discovery</h2>
+            
+            <div class="intro">
+                <h3>Classificação de SLAs</h3>
+                <p>Os SLAs são classificados de acordo com o tamanho da demanda, definido na fase de Briefing pelo PM:</p>
+                <p><span class="sla-tag sla-p">P</span> <strong>Pequeno:</strong> Demandas simples, com escopo bem definido e baixa complexidade.</p>
+                <p><span class="sla-tag sla-m">M</span> <strong>Médio:</strong> Demandas de complexidade moderada, que podem envolver mais de uma área ou funcionalidade.</p>
+                <p><span class="sla-tag sla-g">G</span> <strong>Grande:</strong> Demandas complexas, que envolvem múltiplas áreas, funcionalidades ou sistemas.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Roadmap</h3>
+                        <p><strong>Responsável:</strong> Negócios / Qualquer área demandante</p>
+                        <p><strong>Tarefa:</strong> Preencher formulário padrão descrevendo a ideia com clareza e dados.</p>
+                        <p><strong>Foco:</strong> Detalhamento e transparência da demanda para facilitar análise posterior.</p>
+                        <p><strong>Observações:</strong> Pode consultar outras áreas para enriquecer o conteúdo.</p>
+                        <div class="sla-table">
+                            <table>
+                                <tr>
+                                    <th>SLA P</th>
+                                    <th>SLA M</th>
+                                    <th>SLA G</th>
+                                </tr>
+                                <tr>
+                                    <td>0 dias</td>
+                                    <td>0 dias</td>
+                                    <td>0 dias</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Briefing</h3>
+                        <p><strong>Responsável:</strong> Product Manager</p>
+                        <p><strong>Tarefa:</strong> Entender a demanda, levantar os 7 riscos principais (Negócio, Mercado, adesão interna, jurídico, usabilidade, técnico, segurança) e documentar a visão. O PM define o tamanho da demanda.</p>
+                        <p><strong>Foco:</strong> Levantar questionamentos sobre riscos e garantir clareza para os próximos.</p>
+                        <p><strong>Observações:</strong> Pode chamar áreas responsáveis caso perceba riscos relevantes desde já.</p>
+                        <div class="sla-table">
+                            <table>
+                                <tr>
+                                    <th>SLA P</th>
+                                    <th>SLA M</th>
+                                    <th>SLA G</th>
+                                </tr>
+                                <tr>
+                                    <td>1 dia</td>
+                                    <td>2 dias</td>
+                                    <td>3 dias</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>UX/UI</h3>
+                        <p><strong>Responsável:</strong> UX/UI (BuildBox)</p>
+                        <p><strong>Tarefa:</strong> Criar fluxos de uso e protótipos de alta fidelidade, em havendo tela.</p>
+                        <p><strong>Foco:</strong> Mitigar riscos de usabilidade e garantir boa experiência do usuário.</p>
+                        <p><strong>Observações:</strong> Pode consultar qualquer área. Pode interromper o fluxo se riscos forem percebidos.</p>
+                        <div class="sla-table">
+                            <table>
+                                <tr>
+                                    <th>SLA P</th>
+                                    <th>SLA M</th>
+                                    <th>SLA G</th>
+                                </tr>
+                                <tr>
+                                    <td>1 dia</td>
+                                    <td>3 dias</td>
+                                    <td>5 dias</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Viabilização Técnica</h3>
+                        <p><strong>Responsável:</strong> Tech Lead (BuildBox)</p>
+                        <p><strong>Tarefa:</strong> Analisar viabilidade técnica, conferir endpoints e áreas envolvidas.</p>
+                        <p><strong>Foco:</strong> Mitigar riscos técnicos e garantir caminho de desenvolvimento viável.</p>
+                        <p><strong>Observações:</strong> Pode consultar outras áreas e sugerir ajustes técnicos se necessário.</p>
+                        <div class="sla-table">
+                            <table>
+                                <tr>
+                                    <th>SLA P</th>
+                                    <th>SLA M</th>
+                                    <th>SLA G</th>
+                                </tr>
+                                <tr>
+                                    <td>1 dia</td>
+                                    <td>3 dias</td>
+                                    <td>5 dias</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Criação de Backlog</h3>
+                        <p><strong>Responsável:</strong> PO (BuildBox)</p>
+                        <p><strong>Tarefa:</strong> Fatiar demanda em épicos/histórias, vincular ao cartão, definir entregas.</p>
+                        <p><strong>Foco:</strong> Tornar a demanda executável com clareza e organização.</p>
+                        <p><strong>Observações:</strong> Pode consultar o PM sobre escopo/versionamento. Refinamento ainda a definir.</p>
+                        <div class="sla-table">
+                            <table>
+                                <tr>
+                                    <th>SLA P</th>
+                                    <th>SLA M</th>
+                                    <th>SLA G</th>
+                                </tr>
+                                <tr>
+                                    <td>1 dia</td>
+                                    <td>2 dias</td>
+                                    <td>3 dias</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="intro" style="margin-top: 3rem;">
+                <h3>Tempo Total da Esteira de Discovery</h3>
+                <div class="sla-table">
+                    <table>
+                        <tr>
+                            <th>Demanda Pequena (P)</th>
+                            <th>Demanda Média (M)</th>
+                            <th>Demanda Grande (G)</th>
+                        </tr>
+                        <tr>
+                            <td>4 dias úteis</td>
+                            <td>10 dias úteis</td>
+                            <td>16 dias úteis</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Os tempos são cumulativos e representam o máximo esperado para cada etapa. Em muitos casos, as etapas podem ser concluídas em menos tempo, especialmente para demandas pequenas ou bem definidas.</p>
+                
+                <div class="card" style="margin-top: 2rem;">
+                    <h3 class="card-title">Observações Importantes</h3>
+                    <div class="card-content">
+                        <p><strong>Definition of Ready (DoR):</strong> Os critérios de Definition of Ready (DoR) para cada etapa da esteira ainda serão definidos.</p>
+                        <p><strong>Revisão de Tamanho da Demanda:</strong> O tamanho da demanda (P, M ou G) pode ser revisto a qualquer momento com o aceite do PM.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Novos Rituais de Produto - PremierPet &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
